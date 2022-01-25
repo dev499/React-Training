@@ -28,33 +28,25 @@
 	<br>
 
 	<label>Gender</label><br>
-	<input type ="radio" id="male" name="gender" value="male">
+	<input type ="radio" id="male" name="gender" value="Male">
 	<label for="male">Male</label>
-	<input type ="radio" id="female" name="gender" value="female">
-	<label for="female">Female</label><br>
+	<input type ="radio" id="female" name="gender" value="Female">
+	<label for="female">Female</label><br><br/>
 	
-	<!-- <label for="qualification">Qualification</label>
-		<select id="qualification" name="qualification">
-		<option value="Btech">Btech</option>
-		<option value="Bca">Bca</option>
-		<option value="Bsc">Bsc</option>
-		<option value="Diploma">Diploma</option>
-		</select><br>
-		<br> -->
-		
 		<label for="qualification">Qualification</label>
 		<table class="internal">
+			<br/>
 			<tr>
 				<th>10th Percentage</th>
 				<th>12th Percentage</th>
 				<th>Graduation Percentage</th>
 			</tr>
 			<tr>
-				<td><input type="text" id="one" name="tenth" placeholder="Enter Your Percentage"></td>
-				<td><input type="text" id="two" name="twelth" placeholder="Enter Your Percentage"></td>
-				<td><input type="text" id="three" name="graduation" placeholder="Enter Your Percentage"></td>
+				<td><input type="number" id="one" name="tenth" placeholder="Percentage" ></td>
+				<td><input type="number" id="two" name="twelth" placeholder="Percentage"></td>
+				<td><input type="number" id="three" name="graduation" placeholder="Percentage"></td>
 			</tr>
-		</table>
+		</table><br/>
 
     <label for="nationality">Nationality</label>
 		<select id="nationality" name="nationality">
@@ -67,15 +59,15 @@
 		<br>
 
         <label for="subjects">Subjects</label><br>
-        <input type="checkbox" id="sub1" name="sub1" class="pl" value="DBMS">
+        <input type="checkbox" id="sub1" name="sub" class="pl" value="DBMS">
         <label for="sub1"> DBMS</label><br>
-        <input type="checkbox" id="sub2" name="sub2" class="pl" value="Arifticial Intelligence">
+        <input type="checkbox" id="sub2" name="sub" class="pl" value="Arifticial Intelligence">
         <label for="sub2"> Arifticial Intelligence</label><br>
-        <input type="checkbox" id="sub3" name="sub3" class="pl" value="Software Engineering">
+        <input type="checkbox" id="sub3" name="sub" class="pl" value="Software Engineering">
         <label for="sub3">Software Engineering</label><br>
-        <input type="checkbox" id="sub4" name="sub4" class="pl" value="Cloud Computing">
+        <input type="checkbox" id="sub4" name="sub" class="pl" value="Cloud Computing">
         <label for="sub4">Cloud Computing</label><br>
-        <input type="checkbox" id="sub5" name="sub5" class="pl" value="Data Warehouse">
+        <input type="checkbox" id="sub5" name="sub" class="pl" value="Data Warehouse">
         <label for="sub5">Data Warehouse</label><br><br>
 
 	<input type="button" value="submit" onclick="validateForm()"><br>
@@ -95,7 +87,11 @@
 		<th>Email</th>
 		<th>Gender</th>
 		<th>Nationality</th>   
-		<th>Subjects</th>                                                                                
+		<th>Subjects</th>
+		<th>10th Percentage</th>
+		<th>12th Percentage</th>
+		<th>Graduation Percentage</th>
+
 	</tr>
 
 	<tr>
@@ -106,6 +102,9 @@
 		<td><p id='disp'></p>	</td>
 		<td><p id='nty'></p>	</td>
 		<td><p id='res'></p>	</td>
+		<td><p id='onp'></p>	</td>
+		<td><p id='twp'></p>	</td>
+		<td><p id='grp'></p>	</td>
 
 	</tr>
 

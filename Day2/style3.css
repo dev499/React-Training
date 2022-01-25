@@ -6,6 +6,10 @@ div{
     background-color:#006699;
 }
 
+input[type=number]{
+    width:90%
+}
+
 input[type=text] select{
     width:100%;
     padding:12px 20px;
@@ -40,16 +44,51 @@ h1{
 div label{
     color:white;
 }
-.internal table,th,tr,td
+.internal th
 {
-    border:2px solid black;
+    border:2px solid #bbbbbb;
+    border-collapse:collapse;
+    color: #ffffff;
+}
+.internal td
+{
+    border:2px solid #bbbbbb;
+    border-collapse:collapse;
+}
+.internal table
+{
+    border:2px solid #bbbbbb;
+    border-collapse:collapse;
+}
+.internal tr
+{
+    border:2px solid #bbbbbb;
     border-collapse:collapse;
 }
 
 .internal {
     font-size:smaller ;
 }
+.external table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
 
+.external th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+
+.external td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.external t{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
 
 #name,#email,#address,#pcode,#mnum
 {
