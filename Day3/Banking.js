@@ -64,12 +64,12 @@ function validate(){
     const i=document.getElementById("ad").value;
     const j=document.getElementById("pan").value;
     const k=document.getElementById("oc").value;
-    const o=document.getElementById('marat').value
-    const x=document.getElementById('male')
-    const y=document.getElementById('female')
-    const z=document.getElementById('other')
-    const c=document.getElementById('mr')
-    const d=document.getElementById('ms')
+    const o=document.getElementById('marat').value;
+    const x=document.getElementById('male');
+    const y=document.getElementById('female');
+    const z=document.getElementById('other');
+    const c=document.getElementById('mr');
+    const d=document.getElementById('ms');
 
     const data = new Map();
     data.set('Name',e);
