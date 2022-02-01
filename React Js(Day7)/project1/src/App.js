@@ -1,20 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import {Hello} from './Hello'
+import Welcome from './Welcome';
+import Message from './Message'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://www.google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Happy Googling!!
-        </a>
-      </header>
+
+      <Message/>
+      {/* <Hello name='dev' role='web developer'><p>This is child props</p></Hello>
+      <Hello name='himanshu' role='tester'><button>Submit</button></Hello>
+      <Hello name='shrey' role='android developer'/>
+      <Welcome name='Dev'/>
+      <Welcome name='Shrey'/> */}
     </div>
   );
 }
