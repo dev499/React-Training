@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Formval extends Component {
+    
     constructor(props){
         super(props)
         this.state={
@@ -15,6 +16,7 @@ export default class Formval extends Component {
     }
     handleChange(event) {
         this.setState({name:event.target.value})
+
     }
     handleChange2(event) {
         this.setState({phone:event.target.value})
@@ -22,26 +24,22 @@ export default class Formval extends Component {
     handleChange3(event) {
         this.setState({email:event.target.value})
     }
-    handleSubmit() {
-        if(handleChange2<8)
-        alert("enter the right phone number")
-    }
     handleSubmit(event) {
-        if (this.handleChange2.length<10 && this.handleChange2.length>=11){
-            alert('wrong phone number')
-            return false
+        if(this.state.phone.length<9){
+            console.log(parseInt(this.state.phone.length))
+            alert('Wrong Phone Number')
         }
         else {
-            alert(`Values are:` + this.state.name + this.state.phone + this.state.email)
+            alert('values are : ' + this.state.name + this.state.phone + this.state.email)
         }
+    }
 
-        }
   render() {
     return(
         <div>
             <form onSubmit={this.handleSubmit}> 
                 <label>Enter Your Name</label><br/>
-                <input type='text' value={this.state.name} onChange={this.handleChange} required/><br/>
+                <input type='text' value={this.state.name.toUpperCase()} onChange={this.handleChange} required/><br/>
                 <label>Enter Your Phone Number</label><br/>
                 <input type='number' value={this.state.phone} onChange={this.handleChange2} required/><br/>
                 <label>Enter Your Email</label><br/>
