@@ -3,11 +3,17 @@ import SingleComment from './Components/SingleComment';
 import Cards from './Components/Card';
 import {Card} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Comments from './Components/Comments';
+import Axpost from './Components/Axpost';
+import Location from './Components/Location';
 
 const App= () => {
   return (
     <div className="ui comments">
-      <Card className="text-center">
+      <Location />
+      {/* <Axpost/> */}
+      {/* <Comments/> */}
+      {/* <Card className="text-center">
         <Card.Header>Comments</Card.Header>
         <Cards title='Dev'
         time='today at 06:00pm'
@@ -18,7 +24,7 @@ const App= () => {
         <Cards title='Rohit'
         time='today at 06:00pm'
         comments='Great!! Thanks'/>
-        </Card>
+        </Card> */}
       {/* <SingleComment profile='https://i.pinimg.com/736x/0a/53/c3/0a53c3bbe2f56a1ddac34ea04a26be98.jpg'
       name='Dev'
       desc='This blog is amazing'/>
